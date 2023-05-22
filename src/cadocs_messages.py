@@ -44,7 +44,7 @@ def build_cs_message(smells, channel, user, entities):
                     "type": "section",
                     "text": {
                         "type": "mrkdwn",
-                        "text":"*"+ s +"* "+ smell_data[0].get("name") +" "+smell_data[0].get("emoji") +"\n_"+smell_data[0].get("description")+"_"
+                        "text":"*"+ s +"* "+ smell_data[0].get("name") +" "+smell_data[0].get("emoji") +"\n_"+smell_data[0].get("description")+"\n"+smell_data[0].get("explainability")+"_"
                     }
                 }
             )
@@ -71,6 +71,7 @@ def build_cs_message(smells, channel, user, entities):
                                 "text": st.get("stars"),
                             }
                         ]})
+
     blocks.append({
                 "type": "divider"
             })

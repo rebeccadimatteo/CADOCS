@@ -1,0 +1,41 @@
+[
+    {
+        "user": "U058A883493",
+        "exec_type": "Community Smell Detection",
+        "date": "05/18/2023",
+        "repo": "https://github.com/tensorflow/ranking",
+        "results": [
+            "PDE",
+            "SV",
+            "OS",
+            "SD",
+            "UI"
+        ]
+    },
+    {
+        "user": "U058A883493",
+        "exec_type": "Community Smell Detection",
+        "date": "05/20/2023",
+        "repo": "https://github.com/tensorflow/ranking",
+        "results": [
+            "PDE",
+            "SV",
+            "OS",
+            "SD",
+            "UI"
+        ]
+    },
+    {
+        "user": "U058A883493",
+        "exec_type": "Community Smell Detection",
+        "date": "05/20/2023",
+        "repo": "https://github.com/tensorflow/ranking",
+        "results": [
+            "PDE",
+            "SV",
+            "SD",
+            "TF",
+            "UI"
+        ]
+    }
+]

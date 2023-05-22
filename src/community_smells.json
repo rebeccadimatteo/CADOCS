@@ -12,7 +12,8 @@
                 {"strategy":"Mentoring", "stars":":star::star:"},
                 {"strategy":"Cohesion exercising", "stars":":star::star:"},
                 {"strategy":"Monitoring", "stars":":star:"}
-            ]
+            ],
+            "explainability":"From the analysis performed on Explainability using the SHAP framework, we can deduce that the prediction of the Community Smells OSE, depends on the socio-technical metric PCD, the percentage of core developers. To solve the problem within the team, the number of core developers in the team should be decreased."
         },
         {
             "acronym":"BCE",
@@ -22,35 +23,40 @@
             "strategies":[
                 {"strategy":"Create communication plan", "stars":":star::star::star:"}, 
                 {"strategy":"Restructure the community", "stars":":star::star:"},
-                {"strategy":"Introduce a Social sanctioning mechanism", "stars":":star::star:"}]
+                {"strategy":"Introduce a Social sanctioning mechanism", "stars":":star::star:"}],
+            "explainability":"From the analysis implemented on Explainability using the SHAP framework, we can deduce that the prediction of the Community Smells BCE, depends on the socio-technical metric ND,the active relationships between developers within the team. To solve the problem within the team, active relationships between developers should be increased."
         },
         {
             "acronym":"PDE",
             "name":"Prima-donnas Effect",
             "description":"A team of people is unwilling to respect external changes from other team members due to inefficiently structured collaboration within a community.",
             "emoji":":sparkler::crown::gem:",
-            "strategies": []
+            "strategies": [],
+            "explainability":"From the analysis performed on Explainability using the SHAP framework, we can deduce that the prediction of the Community Smells PDE, depends on the socio-technical metric NAD, the number of active days of a developer on a project. To solve the problem within the team, developers should work more on the project."
         },
         {
             "acronym":"SV",
             "name":"Sharing Villainy",
             "description":"Cause of a lack of information exchange activities, team members share essential knowledge such as outdated, wrong and unconfirmed information.",
             "emoji":":information_desk_person::speech_balloon::x::no_good:",
-            "strategies": []
+            "strategies": [],
+            "explainability":"From the analysis performed on Explainability using the SHAP framework, we can deduce that the prediction of Community Smells SV, depends on the socio-technical metric ADC, the average number of developers per community. To solve the problem within the team, developers should increase the number of developers within the project."
         },
         {
             "acronym":"OS",
             "name":"Organizational Skirmish",
             "description":"A misalignment between different expertise levels of individuals involved in the project leads to dropped productivity and affects the project's timeline and cost.",
             "emoji":":grinning::speech_balloon::worried::question:",
-            "strategies":[]
+            "strategies":[],
+            "explainability":"From the analysis performed on Explainability using the SHAP framework, we can deduce that the prediction of Community Smells OS, depends on the socio-technical metric NC, the number of developers in the community. To solve the problem within the team, developers should increase the number of developers within the project."
         },
         {
             "acronym":"SD",
             "name":"Solution Defiance",
             "description":"The development community presents different levels of cultural and experience background, leading to the division of the community into similar subgroups with completely conflicting opinions.",
             "emoji":":busts_in_silhouette::zap::busts_in_silhouette::zap::busts_in_silhouette:",
-            "strategies": []
+            "strategies": [],
+            "explainability":"From the analysis implemented on Explainability using the SHAP framework, we can deduce that the prediction of Community Smells SD, depends on the socio-technical metric PCD, the percentage of core developers. To solve the problem within the team the developers should increase the number of core developers within the project."
         },
         {
             "acronym":"RS",
@@ -64,27 +70,31 @@
                 {"strategy":"Cohesion exercising", "stars":":star::star:"}, 
                 {"strategy":"Monitoring", "stars":":star:"}, 
                 {"strategy":"Introduce a social-rewarding mechanism", "stars":":star::star:"}
-            ]
+            ],
+            "explainability":"From the analysis implemented on Explainability using the SHAP framework, we can deduce that the prediction of Community Smells RS, depends on the socio-technical metric ND, the active relationships between developers within the team. To solve the problem within the team, active relationships between developers should be increased."
         },
         {
             "acronym":"TF",
             "name":"Truck Factor Smell",
             "description":"Risk of significant knowledge loss due to the turnover of developers resulting from the fact that project information and knowledge are concentrated in a minority of the developers.",
             "emoji":":truck::running::running:",
-            "strategies": []
+            "strategies": [],
+            "explainability":"From the analyses performed on Explainability using the SHAP framework, we can deduce that the prediction of the Community Smells TF,depends on the socio-technical metric SCC, the standard deviation of commitments per community. To solve the problem within the team, the commitments of the team developers should be reduced."
         },
         {
             "acronym":"UI",
             "name":"Unhealthy Interaction",
             "description":"Long delays in stakeholder communications cause slow, light and brief conversations and discussions.",
             "emoji":":no_mouth::no_mouth::no_mouth:",
-            "strategies": []
+            "strategies": [],
+            "explainability":"From the analysis performed on Explainability using the SHAP framework, we can deduce that the prediction of the Community Smells UI, depends on the socio-technical metric NCD, the number of commits per developer in a project. To solve the problem within the team, the number of commits of the team's developers in the project should be increased."
         },
         {
             "acronym":"TC",
             "name":"Toxic Communication",
             "description":"Long delays in stakeholder communications cause slow, light and brief conversations and discussions.",
             "emoji":":bust_in_silhouette::anger::bust_in_silhouette:",
-            "strategies": []
+            "strategies": [],
+            "explainability":"From the analysis implemented on Explainability using the SHAP framework, we can deduce that the prediction of the Community Smells TC, depends on the socio-technical metric NPR, the total number of pull requests. In order to solve the problem within the team, the number of pull requests of the team developers in the project should be increased."
         }
     ]

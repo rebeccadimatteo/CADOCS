@@ -43,7 +43,7 @@ def answer(payload):
 def handle_request(payload):  
     # Get the onboarding message payload
     event = payload.get("event", {})
-    print(event)
+    #print(event)
     print(slack_web_client.auth_test())
     # print(json.dumps(payload, indent=4, sort_keys=True))
     exec_data = {
