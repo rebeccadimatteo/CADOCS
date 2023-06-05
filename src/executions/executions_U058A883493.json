@@ -37,5 +37,18 @@
             "TF",
             "UI"
         ]
+    },
+    {
+        "user": "U058A883493",
+        "exec_type": "Community Smell Detection",
+        "date": "05/22/2023",
+        "repo": "https://github.com/tensorflow/ranking",
+        "results": [
+            "PDE",
+            "SV",
+            "OS",
+            "SD",
+            "UI"
+        ]
     }
 ]

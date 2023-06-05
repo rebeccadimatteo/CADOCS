@@ -10,8 +10,8 @@ class IntentManager:
         # intent detection from our nlp model
         # it will return a text that will be transformed into the correspondent enum
         # it could also return the list of entities found in the text (repo link, date, etc)
-        req = requests.get(os.environ.get('CADOCSNLU_URL_PREDICT')+'?message=' + text)
-        results = req.json()
+        nlu_request = requests.get(os.environ.get('CADOCSNLU_URL_PREDICT')+'?message=' + text)
+        results = nlu_request.json()
         # we retrieve both the intent and the confidence of the prediction
         nlu_intent = results.get('intent').get('intent').get('name')
         nlu_intent_confidence = results.get('intent').get('intent').get('confidence')

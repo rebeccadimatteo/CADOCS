@@ -2,7 +2,7 @@ import json
 
 
 # building of the message for the intent GetCommunitySmells or GetCommunitySmellsDate
-def build_cs_message(smells, channel, user, entities):
+def build_community_smells_message(smells, channel, user, entities):
     print(smells, entities)
     # blocks that will be displayed in slack
     blocks = []
@@ -90,6 +90,8 @@ def build_cs_message(smells, channel, user, entities):
         "blocks": blocks
     }
 
+
+
 #building the message for the Report intent
 def build_report_message(channel, exec_type, results, user, entities):
     # blocks that will be displayed in slack
@@ -147,6 +149,8 @@ def build_report_message(channel, exec_type, results, user, entities):
         "channel":channel,
         "blocks": blocks
     }
+
+
 
 #building the message containing basic information about community smells
 def build_info_message(channel, user):

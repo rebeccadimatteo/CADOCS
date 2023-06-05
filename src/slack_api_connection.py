@@ -67,7 +67,7 @@ def handle_request(payload):
         try:
             response, results, entities, intent = cadocs.new_message(exec_data, channel, user)
         except Exception as e:
-            slack_web_client.chat_postMessage(**cadocs.something_wrong(channel))
+            slack_web_client.chat_postMessage(**cadocs.build_error_response(channel))
             return {"message":"true"}
         finally:
             # we stop the cat-gress
@@ -129,7 +129,7 @@ def handle_action(data):
             try:
                 response, results, entities, intent = cadocs.new_message(exec_data, channel, user)
             except Exception as e:
-                slack_web_client.chat_update(channel=channel, ts=message_ts, blocks=cadocs.something_wrong(channel).get("blocks"))
+                slack_web_client.chat_update(channel=channel, ts=message_ts, blocks=cadocs.build_error_response(channel).get("blocks"))
                 return {"message":"true"}
             finally:
                 # we stop the cat-gress
