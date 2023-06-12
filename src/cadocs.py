@@ -42,7 +42,7 @@ class Cadocs:
         # checking if the message has enough confidence to be executed directly (otherwise active learning mechanism will start)
         if not execution_data["approved"] and confidence < float(os.environ.get('ACTIVE_LEARNING_THRESHOLD',"0.77")) and confidence >= float(os.environ.get('MINIMUM_CONFIDENCE',"0.55")):
             self.conversation_queue.append(execution_data)
-            return self. build_confirmation_message(intent, channel, user.get('id')), None, None, None
+            return self.build_confirmation_message(intent, channel, user.get('id')), None, None, None
         # if the message can be processed directly
         elif (confidence >= float(os.environ.get('ACTIVE_LEARNING_THRESHOLD',"0.77")) or execution_data["approved"]):
             # we instantiate the resolver of the intents
